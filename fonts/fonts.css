@@ -11,3 +11,10 @@
   font-weight: bold;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'M10';
+  src: url(./M10BattleCities.woff2) format('woff2');
+  font-weight: bold;
+  font-display: swap;
+}
