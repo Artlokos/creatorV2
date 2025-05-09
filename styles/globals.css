@@ -4,7 +4,7 @@
 *::after {
   box-sizing: border-box;
   font-family: "NES_rus", monospace;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
 }
 
