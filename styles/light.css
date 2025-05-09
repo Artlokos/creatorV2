@@ -9,59 +9,45 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --main-font: "IBM Plex mono";
-  --accent-font: "IBM Plex mono";
-  --bg-color:rgba(255, 241, 247, 1);
-  --text-color: #312a4e;
-  --accent-color: rgba(255, 0, 112, 1);
-  --title-color: rgba(255, 194, 230, 1);
-  --subtitle__background-color:  rgba(255, 141, 203, 1);
-  --subtitle__text-color: rgba(53, 52, 48, 1);
-  --button-text-color: #353430;
-  --button-text-color-hover: #32312d66;
-  --block-color: #353430;
-  --dec-color: #353430;
-  --shadow-color: rgba(255, 0, 112, 1);
-  background-color: var(--bg-color);
+  /* --main-font: "IBM Plex mono"; */
+  /* --accent-font: "IBM Plex mono"; */
+  /* --bg-color:rgba(255, 241, 247, 1); */
+  /* --text-color: #312a4e; */
+  /* --accent-color: rgba(255, 0, 112, 1); */
+  /* --title-color: rgba(255, 194, 230, 1); */
+  /* --subtitle__background-color:  rgba(255, 141, 203, 1); */
+  /* --subtitle__text-color: rgba(53, 52, 48, 1); */
+  /* --button-text-color: #353430; */
+  /* --button-text-color-hover: #32312d66; */
+  /* --block-color: #353430; */
+  /* --dec-color: #353430; */
+  /* --shadow-color: rgba(255, 0, 112, 1); */
+  /* background-color: var(--bg-color); */
   /* background-image: url(../images/cover-image-light.png); */
-}
-
-.page.theme_light .rec {
-  display: none;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-font: "IBM Plex mono";
-    --accent-font: "IBM Plex mono";
-    --bg-color:rgba(255, 241, 247, 1);
-    --text-color: #312a4e;
-    --accent-color: rgba(255, 0, 112, 1);
-    --title-color: rgba(255, 194, 230, 1);
-    --subtitle__background-color:  rgba(255, 141, 203, 1);
-    --subtitle__text-color: rgba(53, 52, 48, 1);
-    --button-text-color: #353430;
-    --button-text-color-hover: #32312d66;
-    --block-color: #353430;
-    --dec-color: #353430;
-    --shadow-color: rgba(255, 0, 112, 1);
+    /* --main-font: "IBM Plex mono"; */
+    /* --accent-font: "IBM Plex mono"; */
+    /* --bg-color:rgba(255, 241, 247, 1); */
+    /* --text-color: #312a4e; */
+    /* --accent-color: rgba(255, 0, 112, 1); */
+    /* --title-color: rgba(255, 194, 230, 1); */
+    /* --subtitle__background-color:  rgba(255, 141, 203, 1); */
+    /* --subtitle__text-color: rgba(53, 52, 48, 1); */
+    /* --button-text-color: #353430; */
+    /* --button-text-color-hover: #32312d66; */
+    /* --block-color: #353430; */
+    /* --dec-color: #353430; */
+    /* --shadow-color: rgba(255, 0, 112, 1); */
   
-    background-color: var(--bg-color);
-    background-image: url(../images/cover-image-light.png);
+    /* background-color: var(--bg-color); */
+    /* background-image: url(../images/cover-image-light.png); */
   }
 
-  .page {
-    background-color: var(--bg-color);
-    background-image: url(../images/cover-image-light.png);
-  }
-
-  .rec {
-    display: none;
-  }
 }
 
 @media (width < 1024px) {
-  :root {
-    --shadow-color: rgba(255, 141, 203, 1);
-  }
+  :root {}
 }
