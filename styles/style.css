@@ -3,8 +3,8 @@
  .header {
     /* position: relative; */
     display: grid;
-    grid-template-rows: 2fr 2fr 1fr min-content;
-    height: 37vh;
+    grid-template-rows: 3fr 3fr 1fr 1fr 6fr;
+    height: 100vh;
     padding: 10px;
     align-items: center;
     justify-items: center;
@@ -248,3 +248,22 @@
 
 }
 
+.card-section {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth; /* Плавная прокрутка */
+  -webkit-overflow-scrolling: touch; /* Для iOS */
+}
+
+.card {
+  /* display: inline-block; */
+  /* width: 80vw; Ширина карточки */
+  /* margin-right: 20px; */
+  vertical-align: top;
+  white-space: normal;
+}
+
+.img_container{
+  padding: 45px;
+}

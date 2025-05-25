@@ -1,0 +1,177 @@
+.freezer{
+	background-color:rgb(120, 120, 120);
+    fill:rgb(232, 157, 50);
+    width:100%;
+    overflow: visible;
+    border:1px solid red;
+}
+.freezer:hover{
+    /* fill:blue; */
+    /* transition: fill 1s linear; */
+    /* animation: fadeIn 1s ease-in forwards; */
+    .gtraceCl{
+        animation: fadeIn 1s ease-in forwards;
+    }
+    .gmillingCl {
+        /* animation: fadeIn 1s ease-in-out forwards; */
+        animation: slideInWithBounce 1s ease-in forwards;
+    }
+    .gdrillCl{
+        animation: slideInWithBounce 1s ease-in forwards;
+    }
+    .drill-groove{
+    animation: drill-rotation 0.05s ease-in-out forwards infinite;
+}
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInWithBounce {
+  0% {
+    transform: translateX(-10%);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes SVG-grow {
+    0% {
+        transform: scale(1);
+            transform-origin:center;
+    }
+    50%{
+            transform: scale(0.2);
+            transform-origin:left;
+    }
+    100%{
+            transform: scale(1);
+            transform-origin:left;
+    }
+}
+
+
+
+.drill-fill {
+  fill: #777;
+}
+
+
+
+
+@keyframes drill-rotation {
+  0% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(2%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* Анимация вращения при наведении на контейнер */
+/* .img-container:hover .gdrillCl {
+  animation: slideInWithBounce 1s linear forwards;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.like-icon.is-liked {
+    animation: icon-grow 0.3s 0.3s ease-in 1 alternate;
+    .core {
+      animation: core-fill 0.3s linear 0.03s;
+      animation-delay: 0.1s;
+      animation-fill-mode: forwards;
+    }
+    .main-body {
+      animation: main-body-fill 0.3s 0.06s linear;
+      animation-delay: 0.1s;
+      animation-fill-mode: forwards;
+    }
+    .contour {
+      animation: contour-fill 0.3s 0.07s linear;
+      animation-delay: 0.1s;
+      animation-fill-mode: forwards;
+    }
+    .sparks {
+      animation: sparks-fill 0.3s 0.5s ease-in 1 alternate;
+    }
+}
+
+@keyframes select__point {
+    0% {
+      inset-inline-start: -20px;
+    }
+    100% {
+      inset-inline-start: -24px;
+    }
+  }
+  
+@keyframes trace-fill {
+    to {
+        fill:var(--core-active-color);
+    }
+}
+
+@keyframes milling-fill {
+    to {
+        fill:var(--main-body-active-color);
+    }
+}
+
+@keyframes drill-fill {
+    to {
+        fill:var(--contour-active-color);
+    }
+}
+
+@keyframes icon-grow {
+    to {
+        transform: scale(1.5);
+        transform-origin: center;
+    }
+}
