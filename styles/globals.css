@@ -1,10 +1,33 @@
 
+:root{
+  font-size:10px;
+
+  --font-size-small: clamp(0.8rem, 1.5vw, 1rem);
+  --font-size-base:clamp(1.5rem, 2vw,2rem);
+  --font-size-medium: clamp(1.2rem, 2vw, 5rem);
+  --font-size-large: clamp(2.5rem, 5vw, 10rem);
+  --font-size-xlarge: clamp(5rem, 10vw, 20rem);
+  
+  --spacing-small: clamp(0.5rem, 1vw, 1rem);
+  --spacing-medium: clamp(1rem, 2vw, 1.5rem);
+  --spacing-large: clamp(1.5rem, 3vw, 2.5rem);
+  --spacing-xlarge: clamp(2rem, 4vw, 3.5rem);
+  
+  --max-width: clamp(20rem, 90vw, 75rem);
+  --card-width: clamp(18rem, 30vw, 25rem);
+  --card-height: clamp(25rem, 40vw, 30rem);
+
+  --header_title__text-color:rgb(199 64 2);
+  --header_title__text-shadow: rgb(255 248 235);
+  --header_title__text-shadow_offset: clamp(1px,2px,3px)
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   font-family: "NES_rus", monospace;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 
 }
 
@@ -12,9 +35,10 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  padding: 0;
 }
 
 h1,
