@@ -19,7 +19,13 @@
 
   --header_title__text-color:rgb(199 64 2);
   --header_title__text-shadow: rgb(255 248 235);
-  --header_title__text-shadow_offset: clamp(1px,2px,3px)
+  --header_title__text-shadow_offset: clamp(1px,2px,3px);
+
+  --main_background_color:rgba(0,0,0,1);
+
+  --card_background_color:rgba(120,120,120,1);
+
+  --svg_stroke_color:rgba(232, 157, 50, 1);
 }
 
 *,
@@ -27,7 +33,7 @@
 *::after {
   box-sizing: border-box;
   font-family: "NES_rus", monospace;
-  border: 1px solid red;
+  /* border: 1px solid rgb(4, 109, 22); */
 
 }
 
@@ -37,7 +43,7 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   font-size: var(--font-size-base);
-  line-height: 1.5;
+  /* line-height: 1.5; */
   padding: 0;
 }
 

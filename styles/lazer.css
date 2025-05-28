@@ -1,17 +1,12 @@
 .lazer{
-	background-color:rgb(120, 120, 120);
-    fill:none;
-    stroke: rgb(232, 157, 50);
+	background-color: var(--main_background_color);
+    stroke: var(--svg_stroke_color);
     stroke-width:3;
     width:100%;
-    overflow: visible;
-    border:1px solid red;
 }
 .lazer:hover{
-    /* stroke:blue; */
     transition: fill 1s linear;
         .hinge_middle_all{
-            /* stroke: green; */
             animation: slideInWithBounce 1s ease forwards;
         }
         .hinge_top_all,
@@ -25,8 +20,7 @@
         .rod_middle
          {
            transform-box: fill-box;
-            /* animation: move-arm 1s linear infinite alternate, stretchRod 1s forwards; */
-            transform-origin: 48px 70px;
+           transform-origin: 48px 70px;
 }
         .vertical_lazerbeam{
           opacity: 0;

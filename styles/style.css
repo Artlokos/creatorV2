@@ -6,6 +6,34 @@
   gap: var(--spacing-xlarge);
 }
 
+.card-section {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  background-color: var(--card_background_color);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  vertical-align: top;
+}
+.card_title{
+  font-size: var(--font-size-base);
+  color:var(--main_background_color);
+  text-align: center;
+
+}
+
+.img_container{
+  display: flex;
+  flex-direction: column;
+  padding: 45px;
+  gap: 20px;
+}
+
 .img_title{
   max-width: 100%;
   height: auto;
@@ -20,22 +48,4 @@
   height: 100vh;
   min-height: 668px;
   padding: 10px;
-}
-
-
-.card-section {
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
-.card {
-  display: inline-block;
-  width: 80vw;
-  vertical-align: top;
-}
-
-.img_container{
-  padding: 45px;
 }
