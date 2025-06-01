@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark light">
-    <link rel="icon" href="./images/svg/00.svg" type="image/svg+xml">
+	<meta name="Keywords" content="Creator, CREATOR, Фрезер, Лазер, Гравировка, Арсеньев, Приморский край">
+    <meta name="description" content="CREATOR, мастерская, воплощающая мечты">
+	<link rel="icon" href="./images/svg/00.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/style.css">
@@ -15,6 +17,7 @@
     <link rel="stylesheet" href="./styles/milling.css" />
     <link rel="stylesheet" href="./styles/graver.css" />
     <link rel="stylesheet" href="./styles/lazer.css" />
+	<link rel="stylesheet" href="./styles/dialog.css" />
     <title>Мастерская Creator</title>
   </head>
   
@@ -29,19 +32,18 @@
 
         <nav class="header__theme-menu">
             <button type="button" class="header__theme-menu-button" disabled="true">
-              Фрезер
+              1. Фрезер
             </button>
             <button type="button" class="header__theme-menu-button">
-              Лазер
+              2. Лазер
             </button>
             <button type="button" class="header__theme-menu-button">
-              Гравер
+              3. Гравер
             </button>
       </nav>
     </header>
 
     <main class="main_body">
-		<div class="wrapper">
       <section class="card-section" id="frezer">
         <article class="card">
           <h2 class="card_title">Уровень 1.<br><br>Фрезер</h2>
@@ -82,7 +84,7 @@
 
   </g>
             </svg>             
-				<p>Подробнее</p>
+				<p>Старт</p>
 			</div>
             </button>
         </article>
@@ -468,7 +470,7 @@
 					</g>
 
 					</svg>
-			  <p>Подробнее</p>
+			  <p>Старт</p>
 				</div>
 
             </button>
@@ -549,28 +551,26 @@
                   <circle class="psparksLeft" cx="330" cy="480" r="3"/>
             </g>
         </svg>
-              <p>Подробнее</p>
+              <p>Старт</p>
           </div>  
 			</button>
           
         </article>
       </section>
-	  </div>
     </main>
 
     <dialog class="dialog" id="dialog">
-      <form class="dialog__form" method="dialog">
-        <svg viewBox="0 0 21 21" class="dialog__floppy">
-          <use href="./svg/floppy.svg#floppy" />
-        </svg>
-        <p class="dialog__text">вставьте дискету, чтобы продолжить</p>
-        <button class="dialog__button simple-button" type="submit">
-          <span class="button__text">ok</span>
+      <form class="dialog_form" method="dialog">
+		<button class="dialog_close-btn" type="button" aria-label="Закрыть">&times;</button>
+        <p class="dialog_text">вставьте дискету, чтобы продолжить</p>
+        <button class="dialog_button" type="submit">
+          <span class="dialog_button_text">ok</span>
         </button>
       </form>
     </dialog>
 
     <footer class="block__footer decorated-zone">
+
       <h2 class="header_title">GameOver</h2>
     </footer>
     <script src="./scripts/script.js"></script>

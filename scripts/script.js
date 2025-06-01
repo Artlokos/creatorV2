@@ -1,5 +1,12 @@
 const themeButtons = document.querySelectorAll('.header__theme-menu-button');
 
+const dialog = document.getElementById('dialog');
+const closeBtn = document.querySelector('.dialog_close-btn');
+
+closeBtn.addEventListener('click', () => {dialog.close();});
+
+dialog.addEventListener('click', (e) => {if (e.target === dialog) {dialog.close();}});
+
 themeButtons.forEach((button) => {
   button.addEventListener('click', () => {
     themeButtons.forEach((btn) => {

@@ -34,7 +34,9 @@
   display: flex;
   flex-direction: column;
   height: max-content;
-  gap:10px; 
+  gap:10px;
+  align-items: flex-start;
+
 }
 
 .header__theme-menu-button {
