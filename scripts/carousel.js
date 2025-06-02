@@ -1,4 +1,4 @@
-const carouselTrack = document.querySelector('.carousel__track');
+const carouselTrack = document.querySelector('.paralax_carousel__track');
 const slides = document.querySelectorAll('.carousel__slide');
 const prevBtn = document.querySelector('.carousel__button--prev');
 const nextBtn = document.querySelector('.carousel__button--next');
@@ -30,7 +30,7 @@ indicators.forEach((indicator, i) => {
   indicator.addEventListener('click', () => goToSlide(i));
 });
 
-// Автопрокрутка (опционально)
+// Автопрокрутка
 let autoSlideInterval = setInterval(() => goToSlide(currentIndex + 1), 3000);
 
 // Остановка автопрокрутки при наведении

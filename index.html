@@ -10,13 +10,15 @@
 	<link rel="icon" href="./images/svg/00.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/globals.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/cards.css">
 	<link rel="stylesheet" href="./styles/header.css">
+	<link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/milling.css" />
     <link rel="stylesheet" href="./styles/graver.css" />
     <link rel="stylesheet" href="./styles/lazer.css" />
 	<link rel="stylesheet" href="./styles/dialog.css" />
 	<link rel="stylesheet" href="./styles/carousel.css" />
+	<link rel="stylesheet" href="./styles/paralax.css" />
     <title>Мастерская Creator</title>
   </head>
   
@@ -42,7 +44,8 @@
       </nav>
     </header>
 
-    <main class="main_body">
+    <main class="main">
+		<section class="main_body" id="main_body">
       <section class="card-section" id="frezer">
         <article class="card">
           <h2 class="card_title">Уровень 1.<br><br>Фрезер</h2>
@@ -552,55 +555,87 @@
         </svg>
               <p>Старт</p>
           </div>  
-			</button>
-          
+			</button> 
         </article>
       </section>
+</section>
+<section class="parallax-gallery">
+  <div class="parallax-gallery__container">
+    <h2 class="parallax-gallery__title">Достижения</h2>
+    
+    <div class="paralax_carousel">
+      <div class="paralax_carousel__track">
+        <!-- Слайды с параллакс-эффектом -->
+        <div class="paralax_carousel__slide">
+          <div class="parallax-layer" data-speed="0.1">
+            <img src="./images/jpg/p1.jpeg" alt="Изображение 1">
+          </div>
+          <div class="paralax_slide-caption">
+            <h3>Заголовок изображения 1</h3>
+            <p>Описание для первого изображения</p>
+          </div>
+        </div>
+        
+        <div class="paralax_carousel__slide">
+          <div class="parallax-layer" data-speed="0.1">
+            <img src="./images/jpg/p2.jpeg" alt="Изображение 2">
+          </div>
+          <div class="paralax_slide-caption">
+            <h3>Заголовок изображения 2</h3>
+            <p>Описание для второго изображения</p>
+          </div>
+        </div>
+        
+        <div class="paralax_carousel__slide">
+          <div class="parallax-layer" data-speed="0.1">
+            <img src="./images/jpg/p3.jpeg" alt="Изображение 3">
+          </div>
+          <div class="paralax_slide-caption">
+            <h3>Заголовок изображения 3</h3>
+            <p>Описание для третьего изображения</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Навигация -->
+      <button class="paralax_carousel__button carousel__button--prev" aria-label="Предыдущий слайд">❮</button>
+      <button class="paralax_carousel__button carousel__button--next" aria-label="Следующий слайд">❯</button>
+      
+      <div class="paralax_carousel__indicators">
+        <button class="paralax_carousel__indicator" data-slide="0" aria-label="Перейти к слайду 1"></button>
+        <button class="paralax_carousel__indicator" data-slide="1" aria-label="Перейти к слайду 2"></button>
+        <button class="paralax_carousel__indicator" data-slide="2" aria-label="Перейти к слайду 3"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
 
     <dialog class="dialog" id="dialog">
       <form class="dialog_form" method="dialog">
 		<button class="dialog_close-btn" type="button" aria-label="Закрыть">&times;</button>
+			<div class="dialog_wrapper">
+				<img src="" alt="фото фрезера">
+				<article>Металл, пластик, дерево – фрезеруем любые материалы с безупречным качеством поверхности и соблюдением всех ГОСТов.</article>
+				
+			</div>
 
-		  <!-- Карусель -->
-    <div class="carousel">
-      <div class="carousel__track">
-        <!-- Слайды -->
-        <div class="carousel__slide">
-          <img src="./images/jpg/0.jpg" alt="Изображение 1">
-        </div>
-        <div class="carousel__slide">
-          <img src="./images/jpg/1.jpg" alt="Изображение 2">
-        </div>
-        <div class="carousel__slide">
-          <img src="./images/jpg/2.jpg" alt="Изображение 3">
-        </div>
-      </div>
-
-      <!-- Кнопки навигации -->
-      <button class="carousel__button carousel__button--prev" type="button">❮</button>
-      <button class="carousel__button carousel__button--next" type="button">❯</button>
-
-      <!-- Индикаторы слайдов (точки) -->
-      <div class="carousel__indicators">
-        <button class="carousel__indicator" data-slide="0"></button>
-        <button class="carousel__indicator" data-slide="1"></button>
-        <button class="carousel__indicator" data-slide="2"></button>
-      </div>
-    </div>
 
         <button class="dialog_button" type="submit">
-          <span class="dialog_button_text">ok</span>
+          <span class="dialog_button_text">Заказать</span>
         </button>
       </form>
     </dialog>
 
-    <footer class="block__footer decorated-zone">
+    <footer class="block__footer">
 
-      <h2 class="header_title">GameOver</h2>
+      <h2 class="header_title">Game Over</h2>
     </footer>
+
     <script src="./scripts/dialog.js"></script>
 	<script src="./scripts/header.js"></script>
 	<script src="./scripts/carousel.js"></script>
+	<script src="./scripts/paralax.js"></script>
   </body>
 </html>

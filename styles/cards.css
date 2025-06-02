@@ -4,6 +4,7 @@
   gap: var(--spacing-xlarge);
 }
 
+
 .card-section {
   background-color: var(--card_background_color);
   width: 100%;
@@ -50,14 +51,4 @@
   .main_body {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-.block__footer {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  min-height: 668px;
-  padding: 10px;
 }

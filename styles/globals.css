@@ -26,6 +26,8 @@
   --card_background_color:rgba(120,120,120,1);
 
   --svg_stroke_color:rgba(232, 157, 50, 1);
+
+  --main_gap: clamp(1vh, 50%, 100vh);
 }
 
 *,
@@ -74,4 +76,11 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  gap:var(--main_gap);
+  gap:100px;
 }

@@ -19,15 +19,15 @@
 
 .carousel__slide img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  display: flex;
+  /* aspect-ratio: 2/1; */
 }
 
 /* Кнопки "Вперед/Назад" */
 .carousel__button {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
