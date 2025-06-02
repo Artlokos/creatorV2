@@ -12,12 +12,11 @@
     <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/style.css">
 	<link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/light.css">
-    <link rel="stylesheet" href="./styles/dark.css">
     <link rel="stylesheet" href="./styles/milling.css" />
     <link rel="stylesheet" href="./styles/graver.css" />
     <link rel="stylesheet" href="./styles/lazer.css" />
 	<link rel="stylesheet" href="./styles/dialog.css" />
+	<link rel="stylesheet" href="./styles/carousel.css" />
     <title>Мастерская Creator</title>
   </head>
   
@@ -562,7 +561,34 @@
     <dialog class="dialog" id="dialog">
       <form class="dialog_form" method="dialog">
 		<button class="dialog_close-btn" type="button" aria-label="Закрыть">&times;</button>
-        <p class="dialog_text">вставьте дискету, чтобы продолжить</p>
+
+		  <!-- Карусель -->
+    <div class="carousel">
+      <div class="carousel__track">
+        <!-- Слайды -->
+        <div class="carousel__slide">
+          <img src="./images/jpg/0.jpg" alt="Изображение 1">
+        </div>
+        <div class="carousel__slide">
+          <img src="./images/jpg/1.jpg" alt="Изображение 2">
+        </div>
+        <div class="carousel__slide">
+          <img src="./images/jpg/2.jpg" alt="Изображение 3">
+        </div>
+      </div>
+
+      <!-- Кнопки навигации -->
+      <button class="carousel__button carousel__button--prev" type="button">❮</button>
+      <button class="carousel__button carousel__button--next" type="button">❯</button>
+
+      <!-- Индикаторы слайдов (точки) -->
+      <div class="carousel__indicators">
+        <button class="carousel__indicator" data-slide="0"></button>
+        <button class="carousel__indicator" data-slide="1"></button>
+        <button class="carousel__indicator" data-slide="2"></button>
+      </div>
+    </div>
+
         <button class="dialog_button" type="submit">
           <span class="dialog_button_text">ok</span>
         </button>
@@ -573,6 +599,8 @@
 
       <h2 class="header_title">GameOver</h2>
     </footer>
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/dialog.js"></script>
+	<script src="./scripts/header.js"></script>
+	<script src="./scripts/carousel.js"></script>
   </body>
 </html>
