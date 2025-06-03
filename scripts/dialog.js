@@ -27,17 +27,14 @@ const closeBtn = document.querySelector('.dialog_close-btn');
     button.addEventListener('click', function() {
       const sectionId = this.closest('.card-section').id;
       const content = cardContents[sectionId];
-      
       // Устанавливаем контент
       dialogImg.src = content.imgSrc;
       dialogImg.alt = content.title;
       dialogArticle.innerHTML = `<h3>${content.title}</h3><p>${content.text}</p>`;
-      
       // Показываем диалог
       dialog.showModal();
     });
   });
-
 
 closeBtn.addEventListener('click', () => {dialog.close();});
 

@@ -26,28 +26,26 @@
 
 <body class="page">
 	<header class="header">
+
 		<div class="score">
 			<p class="highscore">I- 00</p>
 			<p class="highscore">HI - 20 000</p>
 		</div>
+
 		<h1 class="header_title">Creator</h1>
 		<p class="header_subtitle">Мастерская, воплощающая мечты</p>
 
 		<nav class="header__theme-menu">
-			<button type="button" class="header__theme-menu-button" disabled="true">
-				1. Фрезер
-			</button>
-			<button type="button" class="header__theme-menu-button">
-				2. Лазер
-			</button>
-			<button type="button" class="header__theme-menu-button">
-				3. Гравер
-			</button>
+			<button type="button" class="header__theme-menu-button" disabled="true">1. Фрезер</button>
+			<button type="button" class="header__theme-menu-button">2. Лазер</button>
+			<button type="button" class="header__theme-menu-button">3. Гравер</button>
 		</nav>
+
 	</header>
 
 	<main class="main">
 		<section class="main_body" id="main_body">
+
 			<section class="card-section" id="frezer">
 				<article class="card">
 					<h2 class="card_title">Уровень 1.<br><br>Фрезер</h2>
@@ -263,9 +261,10 @@
 				</article>
 			</section>
 		</section>
+
 		<section class="parallax-gallery">
 			<div class="parallax-gallery__container">
-				<h2 class="parallax-gallery__title">Достижения</h2>
+				<h2 class="parallax-gallery__title">Галерея</h2>
 
 				<div class="paralax_carousel">
 					<div class="paralax_carousel__track">
@@ -321,37 +320,44 @@
 
 		<section class="contacts">
 			<div class="contacts__container">
-				<h2 class="contacts__title">Команда разработки</h2>
-
+				<h2 class="contacts__title">Адреса и контакты</h2>
 				<div class="contacts__grid">
 					<!-- Контактная информация -->
 					<div class="contacts__info">
-						<div class="contact-item">
-							<svg class="contact-icon" viewBox="0 0 24 24">
-								<path
-									d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-							</svg>
-							<a href="https://yandex.ru/maps/?text=Приморский+край,+г.+Арсеньев,+ул.+Дачная,+19" ...>
-								<p class="contact-text">Приморский край, г. Арсеньев, ул. Дачная, 19</p>
-							</a>
-
+						<div class="constacts_img_container">
+							<img src="./images/jpg/place.jpg" alt="Мастерская" class="contacts_img_place">
 						</div>
+						<div class="contacts_group">
+							<div class="contact-item">
+								<a href="https://yandex.ru/maps/?text=Приморский+край,+г.+Арсеньев,+ул.+Дачная,+19" class="contact-link"></a>
+									<svg class="contact-icon" viewBox="0 0 24 24">
+										<path
+											d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+									</svg>
+									<p class="contact-text">Приморский край, г. Арсеньев, ул. Дачная, 19</p>
+								</a>
+							</div>
 
-						<div class="contact-item">
-							<svg class="contact-icon" viewBox="0 0 24 24">
-								<path
-									d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-							</svg>
-							<a href="mailto:Creator25ars@gmail.com?subject=Запрос%20из%20сайта%20Creator&body=Здравствуйте,%20Меня%20интересует%20..."
-								class="contact-link">Creator25ars@gmail.com</a>
-						</div>
+							<div class="contact-item">
+								<a href="mailto:Creator25ars@gmail.com?subject=Запрос%20из%20сайта%20Creator&body=Здравствуйте,%20Меня%20интересует%20..."
+									class="contact-link">
+									<svg class="contact-icon" viewBox="0 0 24 24">
+										<path
+											d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+									</svg>
+									<p class="contact_laber">Creator25ars@gmail.com</p>
+								</a>
+							</div>
 
-						<div class="contact-item">
-							<svg class="contact-icon" viewBox="0 0 24 24">
-								<path
-									d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
-							</svg>
-							<a href="tel:+79241234567" class="contact-link">+7 (924) 123-45-67</a>
+							<div class="contact-item">
+								<a href="tel:+79147304889" class="contact-link">
+									<svg class="contact-icon" viewBox="0 0 24 24">
+										<path
+											d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
+									</svg>
+									<p class="contact_label">+7 (914) 730-48-89</p>
+								</a>
+							</div>
 						</div>
 					</div>
 
@@ -359,7 +365,7 @@
 					<div class="contacts__social">
 						<h3 class="social-title">Мы в соцсетях</h3>
 						<div class="social-links">
-							<a href="https://wa.me/79241234567" class="social-link" target="_blank" rel="noopener">
+							<a href="https://wa.me/79147304889" class="social-link" target="_blank" rel="noopener">
 								<svg viewBox="0 0 472 468" class="social-icon">
 									<g transform="translate(0,468) scale(0.11,-0.11)">
 										<path
@@ -368,17 +374,15 @@
 											d="M1419 3501 c-70 -38 -170 -181 -211 -300 -19 -57 -23 -86 -22 -206 0 -131 2 -146 33 -235 95 -278 400 -693 682 -926 157 -130 300 -214 496 -293 185 -74 228 -83 371 -79 124 3 129 4 205 42 51 25 101 61 146 105 86 82 110 141 118 281 6 113 15 102 -142 185 -289 154 -359 181 -390 155 -9 -7 -40 -48 -70 -90 -81 -115 -143 -180 -171 -180 -24 0 -164 64 -239 109 -67 41 -197 146 -256 208 -121 124 -259 333 -259 391 0 20 14 45 49 85 56 64 108 151 117 194 4 21 -3 52 -24 104 -17 41 -60 151 -97 244 -37 94 -78 181 -91 195 -21 22 -33 24 -116 27 -78 3 -99 0 -129 -16z" />
 									</g>
 								</svg>
-								<span>WhatsApp</span>
+								<p>WhatsApp</p>
 							</a>
-
 							<a href="https://t.me/creator_arsenev" class="social-link" target="_blank" rel="noopener">
 								<svg class="social-icon" viewBox="0 0 24 24">
 									<path
 										d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.14-.26.26-.429.26l.213-3.053 5.572-5.035c.24-.213-.054-.334-.373-.121l-6.89 4.34-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z" />
 								</svg>
-								<span>Telegram</span>
+								<p>Telegram</p>
 							</a>
-
 							<a href="https://vk.com/creator_arsenev" class="social-link" target="_blank" rel="noopener">
 								<svg class="social-icon" width="800px" height="800px" viewBox="0 0 97.75 97.75">
 									<g>
@@ -386,36 +390,29 @@
 											d="M48.875,0C21.883,0,0,21.882,0,48.875S21.883,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.867,0,48.875,0z M73.667,54.161c2.278,2.225,4.688,4.319,6.733,6.774c0.906,1.086,1.76,2.209,2.41,3.472c0.928,1.801,0.09,3.776-1.522,3.883l-10.013-0.002c-2.586,0.214-4.644-0.829-6.379-2.597c-1.385-1.409-2.67-2.914-4.004-4.371c-0.545-0.598-1.119-1.161-1.803-1.604c-1.365-0.888-2.551-0.616-3.333,0.81c-0.797,1.451-0.979,3.059-1.055,4.674c-0.109,2.361-0.821,2.978-3.19,3.089c-5.062,0.237-9.865-0.531-14.329-3.083c-3.938-2.251-6.986-5.428-9.642-9.025c-5.172-7.012-9.133-14.708-12.692-22.625c-0.801-1.783-0.215-2.737,1.752-2.774c3.268-0.063,6.536-0.055,9.804-0.003c1.33,0.021,2.21,0.782,2.721,2.037c1.766,4.345,3.931,8.479,6.644,12.313c0.723,1.021,1.461,2.039,2.512,2.76c1.16,0.796,2.044,0.533,2.591-0.762c0.35-0.823,0.501-1.703,0.577-2.585c0.26-3.021,0.291-6.041-0.159-9.05c-0.28-1.883-1.339-3.099-3.216-3.455c-0.956-0.181-0.816-0.535-0.351-1.081c0.807-0.944,1.563-1.528,3.074-1.528l11.313-0.002c1.783,0.35,2.183,1.15,2.425,2.946l0.01,12.572c-0.021,0.695,0.349,2.755,1.597,3.21c1,0.33,1.66-0.472,2.258-1.105c2.713-2.879,4.646-6.277,6.377-9.794c0.764-1.551,1.423-3.156,2.063-4.764c0.476-1.189,1.216-1.774,2.558-1.754l10.894,0.013c0.321,0,0.647,0.003,0.965,0.058c1.836,0.314,2.339,1.104,1.771,2.895c-0.894,2.814-2.631,5.158-4.329,7.508c-1.82,2.516-3.761,4.944-5.563,7.471C71.48,50.992,71.611,52.155,73.667,54.161z" />
 									</g>
 								</svg>
-								<span>ВКонтакте</span>
+								<p>VK</p>
 							</a>
-
 							<a href="https://instagram.com/creator_arsenev" class="social-link" target="_blank"
 								rel="noopener">
 								<svg class="social-icon" viewBox="0 0 24 24">
 									<path
 										d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
 								</svg>
-								<span>Instagram</span>
+								<p>Instagram</p>
 							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
 	</main>
 
 	<dialog class="dialog" id="dialog">
 		<form class="dialog_form" method="dialog">
 			<button class="dialog_close-btn" type="button" aria-label="Закрыть">&times;</button>
 			<div class="dialog_wrapper">
-				<img src="" alt="фото фрезера">
-				<article>Металл, пластик, дерево – фрезеруем любые материалы с безупречным качеством поверхности и
-					соблюдением всех ГОСТов.</article>
-
+				<img src="" alt="">
 			</div>
-
-
 			<button class="dialog_button" type="submit">
 				<span class="dialog_button_text">Заказать</span>
 			</button>
@@ -423,7 +420,6 @@
 	</dialog>
 
 	<footer class="block__footer">
-
 		<h2 class="header_title">Game_Over</h2>
 	</footer>
 

@@ -28,6 +28,8 @@
   --svg_stroke_color:rgba(232, 157, 50, 1);
 
   --main_gap: clamp(1vh, 50%, 100vh);
+
+  --header_section_color:#333;
 }
 
 *,

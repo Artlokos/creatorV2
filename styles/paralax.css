@@ -17,7 +17,7 @@
   text-align: center;
   margin-bottom: 3rem;
   font-size: 2.5rem;
-  color: #333;
+  color: var(--header_section_color);
 }
 
 .paralax_carousel {
