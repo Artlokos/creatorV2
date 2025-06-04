@@ -24,12 +24,14 @@
   --main_background_color:rgba(0,0,0,1);
 
   --card_background_color:rgba(120,120,120,1);
+  --card_background_color_hover:rgba(140,140,140,1);
 
   --svg_stroke_color:rgba(232, 157, 50, 1);
 
   --main_gap: clamp(1vh, 50%, 100vh);
 
-  --header_section_color:#333;
+  --header_section_color:#333333;
+  --header_section_color_hover:rgba(120,120,120,0.8);
 }
 
 *,
@@ -37,7 +39,7 @@
 *::after {
   box-sizing: border-box;
   font-family: "NES_rus", monospace;
-  /* border: 1px solid rgb(4, 109, 22); */
+  border: 1px solid rgb(4, 109, 22);
 
 }
 

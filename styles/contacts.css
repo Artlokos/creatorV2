@@ -110,16 +110,18 @@ justify-content: center;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  background-color: white;
+  background-color: var(--card_background_color);
   border-radius: 8px;
   text-decoration: none;
-  color: #333;
+  color: var(--header_section_color);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .social-link:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  background-color: var(--card_background_color_hover);
+  color: var(--header_section_color_hover);
 }
 
 .social-icon {
@@ -129,7 +131,7 @@ justify-content: center;
 }
 
 /* Цвета иконок */
-.social-link:nth-child(1) .social-icon { fill: #25D366; } /* WhatsApp */
-.social-link:nth-child(2) .social-icon { fill: #0088cc; } /* Telegram */
-.social-link:nth-child(3) .social-icon { fill: #4a76a8; } /* VK */
-.social-link:nth-child(4) .social-icon { fill: #E1306C; } /* Instagram */
+.social-link:nth-child(1) .social-icon { fill: #25D366; fill:var(--header_section_color); } 
+.social-link:nth-child(2) .social-icon { fill: #0088cc; fill:var(--header_section_color);} 
+.social-link:nth-child(3) .social-icon { fill: #4a76a8; fill:var(--header_section_color);} 
+.social-link:nth-child(4) .social-icon { fill: #E1306C; fill:var(--header_section_color);} 
