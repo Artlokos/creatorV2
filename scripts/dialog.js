@@ -1,6 +1,7 @@
 const dialog = document.getElementById('dialog');
+const dialogHeader =dialog.querySelector('.dialog_header')
 const dialogImg = dialog.querySelector('img');
-const dialogArticle = dialog.querySelector('article');
+const dialogText = dialog.querySelector('.dialog_text');
 const closeBtn = document.querySelector('.dialog_close-btn');
 
   // Контент для каждой карточки
@@ -8,17 +9,17 @@ const closeBtn = document.querySelector('.dialog_close-btn');
     frezer: {
       imgSrc: './images/jpg/frezer.jpg',
       title: 'Фрезерная обработка',
-      text: 'Прецизионная обработка металла, пластика и дерева на современных станках с ЧПУ. Точность до 0.01 мм, соблюдение ГОСТ и ТУ.'
+      text: 'Прецизионная обработка металла, пластика и дерева на современных станках с ЧПУ. Точность до 0.01 мм, соблюдение ГОСТ и ТУ.<br><br> Для уточнения подробностей заказа нажмите на кнопку "Заказать обратный звонок"'
     },
     lazer: {
       imgSrc: './images/jpg/laser.jpg',
       title: 'Лазерная резка',
-      text: 'Чистая и точная лазерная резка металлов до 20 мм. Минимальные допуски, ровные кромки без заусенцев.'
+      text: 'Чистая и точная лазерная резка металлов до 20 мм. Минимальные допуски, ровные кромки без заусенцев.<br><br> Для уточнения подробностей заказа нажмите на кнопку "Заказать обратный звонок"'
     },
     graver: {
       imgSrc: './images/jpg/graver.jpg',
       title: 'Гравировка',
-      text: 'Художественная гравировка на любых материалах. Логотипы, памятные надписи, декоративные элементы.'
+      text: 'Художественная гравировка на любых материалах. Логотипы, памятные надписи, декоративные элементы.<br><br> Для уточнения подробностей заказа нажмите на кнопку "Заказать обратный звонок"'
     }
   };
 
@@ -30,7 +31,8 @@ const closeBtn = document.querySelector('.dialog_close-btn');
       // Устанавливаем контент
       dialogImg.src = content.imgSrc;
       dialogImg.alt = content.title;
-      dialogArticle.innerHTML = `<h3>${content.title}</h3><p>${content.text}</p>`;
+      dialogHeader.innerHTML = content.title;
+      dialogText.innerHTML = content.text;
       // Показываем диалог
       dialog.showModal();
     });

@@ -1,4 +1,5 @@
 .main_body {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: var(--spacing-xlarge);
@@ -12,6 +13,27 @@
   margin: 0 auto;
   overflow: hidden; 
   white-space: normal;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.card-section.active {
+  position:absolute;
+  transform: scale(1.47);
+  z-index: 10;
+  position: relative;
+  margin: 2rem auto;
+}
+
+/* Дополнительные стили для лучшего визуального эффекта */
+.card-section:not(.active) {
+  opacity: 0.8;
+  filter: blur(1px);
+}
+
+.card-section:hover{
+   opacity: 1;
+  filter: blur(0px);
 }
 
 .card {
@@ -37,6 +59,21 @@
 
 .lazer{
   aspect-ratio: 1/1;
+}
+
+
+.card_start {
+  display: inline-block; /* Для корректной работы transform */
+  will-change: transform; /* Оптимизация анимации */
+  transform: scale(1);
+  transition: 
+    transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    color 0.2s linear;
+}
+
+.card_start:hover {
+  color: var(--main_background_color);
+  transform: scale(1.5) translateZ(0); /* Активация аппаратного ускорения */
 }
 
 /* Планшеты (769px - 1023px) */

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const carousel = document.querySelector('.paralax_carousel');
+  const paralax_carousel= document.querySelector('.paralax_carousel');
   const track = document.querySelector('.paralax_carousel__track');
   const slides = document.querySelectorAll('.paralax_carousel__slide');
   const paralaxPrevBtn = document.querySelector('.paralax_carousel__button--prev');
@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Настройка параллакс-эффекта
   function setupParallax() {
-    carousel.addEventListener('mousemove', (e) => {
-      const rect = carousel.getBoundingClientRect();
+    paralax_carousel.addEventListener('mousemove', (e) => {
+      const rect = paralax_carousel.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
       const centerX = rect.width / 2;
