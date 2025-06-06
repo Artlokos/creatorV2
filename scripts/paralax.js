@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function init() {
     updateCarousel();
     setupParallax();
+    startAutoSlide();
   }
   
   // Обновление позиции карусели
@@ -55,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Сброс позиции при уходе мыши
-    carousel.addEventListener('mouseleave', () => {
+    paralax_carousel.addEventListener('mouseleave', () => {
       parallaxLayers.forEach(layer => {
         layer.style.transform = 'translate(0, 0)';
       });
@@ -74,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     carousel.addEventListener('mouseleave', () => {
-      startAutoSlide();
+      // startAutoSlide();
     });
   }
   

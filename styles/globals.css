@@ -3,8 +3,8 @@
   font-size:10px;
 
   --font-size-small: clamp(0.8rem, 1.5vw, 1rem);
-  --font-size-base:clamp(1.5rem, 2vw,2rem);
-  --font-size-medium: clamp(1.2rem, 2vw, 4.5rem);
+  --font-size-base:clamp(1.2rem, 2vw,2rem);
+  --font-size-medium: clamp(1.5rem, 2vw, 4.5rem);
   --font-size-large: clamp(2.5rem, 5vw, 10rem);
   --font-size-xlarge: clamp(5rem, 10vw, 20rem);
   
@@ -14,6 +14,7 @@
   --spacing-xlarge: clamp(2rem, 4vw, 3.5rem);
   
   --max-width: clamp(20rem, 90vw, 75rem);
+  --max-width_contacts: clamp(20rem, 100vw, 100rem);
   --card-width: clamp(18rem, 30vw, 25rem);
   --card-height: clamp(25rem, 40vw, 30rem);
 

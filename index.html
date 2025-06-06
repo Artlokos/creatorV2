@@ -46,7 +46,6 @@
 
 	<main class="main">
 		<section class="main_body" id="main_body">
-
 			<article class="card-section" id="frezer">
 				<article class="card">
 					<h2 class="card_title">Уровень 1.<br><br>Фрезер</h2>
@@ -81,13 +80,12 @@
 					</button>
 				</article>
 			</article>
-
 			<article class="card-section" id="lazer">
 				<article class="card">
 					<h2 class="card_title">Уровень 2. <br><br> Лазер</h2>
 					<button class="card_button" type="button" onclick="window['dialog'].showModal()">
 						<div class="img_container">
-							<svg id="lazer" class="lazer" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+							<svg id="lazeer" class="lazer" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
 
 								<g id="lazer_all" class="lazer_all">
 
@@ -208,7 +206,6 @@
 					</button>
 				</article>
 			</article>
-
 			<article class="card-section" id="graver">
 				<article class="card">
 					<h2 class="card_title">Уровень 3. <br><br>Гравер</h2>
@@ -326,12 +323,13 @@
 					<!-- Контактная информация -->
 					<div class="contacts__info">
 						<div class="constacts_img_container">
+							<img src="./images/jpg/map.png" alt="На карте" class="contacts_img_place">
 							<img src="./images/jpg/place.jpg" alt="Мастерская" class="contacts_img_place">
 						</div>
 						<div class="contacts_group">
 							<div class="contact-item">
 								<a href="https://yandex.ru/maps/?text=Приморский+край,+г.+Арсеньев,+ул.+Дачная,+19"
-									class="contact-link"></a>
+									class="contact-link">
 								<svg class="contact-icon" viewBox="0 0 24 24">
 									<path
 										d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
@@ -368,7 +366,7 @@
 						<h2 class="contacts__title">Мы в соцсетях</h3>
 							<div class="social-links">
 								<a href="https://wa.me/79147304889" class="social-link" target="_blank" rel="noopener">
-									<svg viewBox="0 0 472 468" class="social-icon">
+									<svg viewBox="0 0 472 440" class="social-icon">
 										<g transform="translate(0,468) scale(0.11,-0.11)">
 											<path
 												d="M1985 4390 c-184 -21 -443 -98 -617 -185 -700 -345 -1124 -1082 -1068 -1854 21 -286 124 -598 277 -840 l35 -54 -47 -126 c-67 -181 -128 -350 -201 -559 -35 -100 -69 -192 -75 -203 -21 -39 -42 -44 381 77 91 25 212 59 270 74 58 15 163 44 233 65 l128 37 122 -55 c235 -108 398 -157 597 -182 263 -34 599 6 855 102 102 38 298 138 385 195 285 190 517 450 663 743 80 160 115 252 152 410 91 381 70 740 -67 1130 -39 111 -162 335 -243 443 -183 246 -432 460 -677 583 -175 88 -300 130 -535 180 -112 24 -429 34 -568 19z m470 -305 c446 -72 824 -302 1076 -654 156 -219 259 -485 290 -748 16 -136 6 -404 -20 -521 -86 -390 -260 -673 -576 -939 -183 -154 -443 -273 -725 -330 -131 -27 -460 -24 -595 5 -189 41 -368 111 -551 218 -32 18 -33 18 -175 -19 -79 -20 -205 -55 -279 -77 -74 -21 -136 -37 -138 -35 -4 3 52 167 111 323 20 52 41 115 48 141 l12 46 -58 80 c-102 142 -203 381 -254 597 -43 187 -35 493 20 704 63 242 146 414 295 604 126 163 273 292 444 392 75 44 87 50 210 106 82 37 252 86 350 102 41 6 82 13 90 15 50 10 347 3 425 -10z" />
@@ -422,9 +420,9 @@
 				<div class="dialog_content">
 					<p class="dialog_text"></p>
 				</div>
-				<button class="dialog_button" type="submit">
+				<a href="https://wa.me/79147304889" class="dialog_button" target="_blank" rel="noopener">
 					<p class="dialog_button_text">Заказать обратный звонок</p>
-				</button>
+				</a>
 			</div>
 		</form>
 	</dialog>

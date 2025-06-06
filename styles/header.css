@@ -28,6 +28,7 @@
   font-family: "NES_rus", serif;
   color: var(--subtitle__text-color);
   font-size: var(--font-size-medium);
+  font-size: clamp(1.2rem, 2vw, 4.5rem);
 }
 
 .header__theme-menu {
