@@ -46,6 +46,23 @@
 
 .dialog_button{
 grid-area: D;
+align-content: center;
+align-items: center;
+text-align: center;
+outline: 1px solid black;
+padding: 5px;
+border-radius: 5px;
+}
+
+.dialog_button:active{
+grid-area: D;
+align-content: center;
+align-items: center;
+text-align: center;
+outline: 2px solid black;
+border-radius: 5px;
+padding: 5px;
+color:var(--header_section_color_hover);
 }
 
 .dialog_close-btn {
@@ -67,4 +84,50 @@ grid-area: D;
 
 .dialog_close-btn:hover {
   color: #000;
+}
+
+@media (width < 769px) {
+  .dialog{
+    position: relative;
+    inline-size: 90vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    align-items: center;
+    z-index: 40;
+  }
+  .dialog_form{
+    inline-size: 50vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .dialog_container{
+    position: relative;
+    inline-size: 50vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .dialog_img_container{
+    width: 50vw;
+  }
+  .dialog_img{
+    width: 50vw;
+  }
+  .dialog_close-btn {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 44px;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
 }

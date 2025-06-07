@@ -70,12 +70,12 @@ document.addEventListener('DOMContentLoaded', function() {
       goToSlide(currentIndex + 1);
     }, 5000);
     
-    carousel.addEventListener('mouseenter', () => {
+    paralax_carousel.addEventListener('mouseenter', () => {
       clearInterval(autoSlideInterval);
     });
     
-    carousel.addEventListener('mouseleave', () => {
-      // startAutoSlide();
+    paralax_carousel.addEventListener('mouseleave', () => {
+      startAutoSlide();
     });
   }
   
